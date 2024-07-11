@@ -1,19 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="text-5xl text-red-400">test</div>
+    <div class="container-fluid max-w-[800px] mx-auto">
+      <SimpleTable title="User Table"></SimpleTable>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import SimpleTable from "@/components/SimpleTable.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    SimpleTable,
+  },
+};
 </script>
 
 <style>
